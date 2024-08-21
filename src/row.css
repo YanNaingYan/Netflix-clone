@@ -1,0 +1,19 @@
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.banner-bottom {
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(27, 27, 27, 0.61),
+    #111
+  );
+}
+.mail-input {
+  background-image: linear-gradient(
+    360deg,
+    transparent,
+    rgba(77, 70, 70, 0.329) rgba(77, 70, 70, 0.271)
+  );
+}
