@@ -9,14 +9,14 @@ const LoginNav = () => {
   return (
     <div className="w-full">
       <div
-        className={`px-8 md:px-28 top-0 flex justify-between items-center h-[150px] z-10 w-full p-5 transition-all ease-in duration-500 
+        className={`px-6 md:px-28 top-0 flex justify-between items-center h-[150px] z-10 w-full p-5 transition-all ease-in duration-500 
         bg-transparent select-none
         `}
       >
         <img
           src={netflix}
           alt=""
-          className="w-[160px] md:w-[200px] h-[140px]  left-5   "
+          className="w-[140px] md:w-[200px] h-[140px]  left-5   "
         />
         <button
           onClick={handleSignIn}
