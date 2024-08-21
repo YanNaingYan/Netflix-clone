@@ -17,7 +17,7 @@ const VideoPage = () => {
     setList(!list);
   };
   const opts = {
-    height: "400",
+    height: "300",
     width: "100%",
     playerVars: {
       autoplay: 1,
@@ -25,12 +25,12 @@ const VideoPage = () => {
   };
   return (
     <div className="bg-[rgb(17,17,17)] w-full h-screen">
-      <div className="flex justify-between ">
-        <div className="ml-4">
-          <h1 className="text-white text-5xl font-bold pt-8 ">
+      <div className=" flex flex-col-reverse md:flex-row justify-between ">
+        <div className="ml-4 w-[70%] md:w-full">
+          <h1 className="text-white text-3xl md:text-5xl font-bold pt-4 md:pt-8 ">
             {selectedMovie?.title || selectedMovie?.name || ""}
           </h1>
-          <p className="w-[40rem] leading-5 pt-4 text-sm text-gray-300 ">
+          <p className="w-[80%] line-clamp-3 md:w-[40rem] leading-5 pt-4 text-sm text-gray-300 ">
             {selectedMovie?.overview}
           </p>
           <p className="text-white font-semibold mt-2">
@@ -54,9 +54,13 @@ const VideoPage = () => {
             This function is currently unavailable!
           </p>
         </div>
-        <img src={netflix} alt="" className="w-[180px] h-[80px]" />
+        <img src={netflix} alt="" className="w-[180px] h-[60px] md:h-[80px]" />
       </div>
-      <YouTube videoId={trailerUrl} opts={opts} className=" mt-2 p-4" />
+      <YouTube
+        videoId={trailerUrl}
+        opts={opts}
+        className=" mt-2 p-4 w-full h-[100px]"
+      />
     </div>
   );
 };
